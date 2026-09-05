@@ -9,11 +9,11 @@ export default {
     extend: {
       colors: {
         cyber: {
-          bg: '#070A13',
-          card: '#0F1626',
-          panel: '#141D30',
-          border: '#1E2B45',
-          hover: '#253554',
+          bg: '#060A12',
+          card: '#0D1424',
+          panel: '#121B2E',
+          border: '#1B2842',
+          hover: '#223252',
           accent: '#06B6D4',
           purple: '#A855F7',
           emerald: '#10B981',
@@ -23,8 +23,9 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
-        heading: ['Space Grotesk', 'system-ui', 'sans-serif'],
+        display: ['Syne', 'sans-serif'],
+        heading: ['Syne', 'Outfit', 'sans-serif'],
+        sans: ['Outfit', 'system-ui', 'sans-serif'],
         mono: ['JetBrains Mono', 'Fira Code', 'monospace']
       }
     },
