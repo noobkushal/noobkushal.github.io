@@ -9,10 +9,10 @@ export default {
     extend: {
       colors: {
         cyber: {
-          bg: '#060A12',
-          card: '#0D1424',
-          panel: '#121B2E',
-          border: '#1B2842',
+          bg: '#070A13',
+          card: '#0F1626',
+          panel: '#141D30',
+          border: '#1E2B45',
           hover: '#223252',
           accent: '#06B6D4',
           purple: '#A855F7',
@@ -23,9 +23,9 @@ export default {
         }
       },
       fontFamily: {
-        display: ['Syne', 'sans-serif'],
-        heading: ['Syne', 'Outfit', 'sans-serif'],
-        sans: ['Outfit', 'system-ui', 'sans-serif'],
+        aboutHeading: ['Syne', 'Space Grotesk', 'sans-serif'],
+        heading: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+        sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
         mono: ['JetBrains Mono', 'Fira Code', 'monospace']
       }
     },
