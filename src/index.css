@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #090D16;
+    --bg-card: #111827;
+    --bg-panel: #151D2E;
+    --border-color: #1F293D;
+  }
+
+  body {
+    @apply bg-[#090D16] text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-black;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090D16;
+}
+::-webkit-scrollbar-thumb {
+  background: #1F293D;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #06B6D4;
+}
+
+/* Cyber Cards & Panels */
+.cyber-card {
+  background: rgba(17, 24, 39, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid #1F293D;
+  border-radius: 0.75rem;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cyber-card:hover {
+  border-color: rgba(6, 182, 212, 0.5);
+  box-shadow: 0 0 25px -5px rgba(6, 182, 212, 0.2);
+  transform: translateY(-2px);
+}
+
+.cyber-panel {
+  background: #151D2E;
+  border: 1px solid #1F293D;
+  border-radius: 0.75rem;
+}
+
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.25);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.25);
+}
+
+.glow-purple {
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.25);
+}
