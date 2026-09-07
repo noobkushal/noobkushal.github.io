@@ -59,6 +59,17 @@ export const PORTFOLIO_DATA = {
 
   certifications: [
     {
+      id: "cert-oci-architect",
+      title: "Oracle Cloud Infrastructure Architect Associate (1Z0-1072-26)",
+      issuer: "Oracle",
+      issuerBrand: "ORACLE",
+      date: "September 2026",
+      status: "COMPLETED",
+      verificationUrl: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=E20246731733E3E2D4A4A4DF44CF4BACA9821DBFDD72BB13E4B03B83CD9CF51B",
+      description: "Verified Oracle certification demonstrating expertise in OCI architecture design, high availability, IAM security governance, cloud networking, and workload migration.",
+      skills: ["Oracle Cloud Infrastructure (OCI)", "Cloud Architecture", "Cloud Security", "IAM Governance", "Networking"]
+    },
+    {
       id: "cert-oci",
       title: "Oracle Cloud Infrastructure Foundations Associate",
       issuer: "Oracle",

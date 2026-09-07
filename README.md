@@ -13,12 +13,13 @@
 
 Hi, I'm **Kushal J**, a Computer Science & Engineering student at **BMS Institute of Technology and Management (BMSIT&M)**, Bengaluru, India. I specialize in **Cloud IAM Governance**, **Cybersecurity Operations**, **Security Policy Auditing**, and **Web3 Smart Contract Security**.
 
-I have completed a technical security internship at the **National Informatics Centre (NIC)**, earned the **Oracle Cloud Infrastructure Foundations Associate** certification, completed the **Google Cybersecurity Professional Certificate**, and earned verified badges from Cisco and IBM. I am actively preparing for the **Microsoft SC-900 / SC-200** security certifications.
+I have completed a technical security internship at the **National Informatics Centre (NIC)**, earned the **Oracle Cloud Infrastructure Architect Associate** and **Oracle Cloud Infrastructure Foundations Associate** certifications, completed the **Google Cybersecurity Professional Certificate**, and earned verified badges from Cisco and IBM. I am actively preparing for the **Microsoft SC-900 / SC-200** security certifications.
 
 ---
 
 ## 🌟 Verified Industry Credentials
 
+- 🔴 **Oracle Cloud Infrastructure Architect Associate (1Z0-1072-26)** — Verified September 2026 ([Oracle Sharebadge Verification](https://catalog-education.oracle.com/ords/certview/sharebadge?id=E20246731733E3E2D4A4A4DF44CF4BACA9821DBFDD72BB13E4B03B83CD9CF51B))
 - 🔴 **Oracle Cloud Infrastructure Foundations Associate (1Z0-1085-26)** — Verified September 2026 ([Oracle Sharebadge Verification](https://catalog-education.oracle.com/ords/certview/sharebadge?id=5A159B1502A7EC992AE1EEF7551B8FEF312DA4F7A1129A2A6D76E5F594C4F68B))
 - 🔵 **Google Cybersecurity Professional Certificate** — Coursera Verified ([Coursera Sharebadge Verification](https://coursera.org/share/fdeecd27dec1125c29c35f8fd50f4ac8))
 - 🟡 **Cisco & IBM Verified Credentials** — Credly Verified ([Credly Profile Badges](https://www.credly.com/users/kushal-j.e51ce5e1/badges/credly))
