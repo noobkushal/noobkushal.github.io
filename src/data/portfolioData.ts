@@ -45,15 +45,15 @@ export const PORTFOLIO_DATA = {
   personal: {
     name: "Kushal J",
     title: "Cybersecurity & Cloud Security Engineer",
-    tagline: "Building Practical Cloud IAM, Threat Detection & Web3 Security Solutions",
-    bio: "Computer Science Engineering student focused on cybersecurity, cloud security, IAM, Web3/blockchain security, and security operations. Building practical security projects while developing expertise in Microsoft Security, Oracle Cloud Infrastructure, cloud IAM, threat detection, and smart contract fundamentals.",
+    tagline: "Building Practical Cloud IAM, Threat Detection, Network Security & Web3 Security Solutions",
+    bio: "Computer Science Engineering student focused on cybersecurity, cloud security, network traffic analysis, threat detection, IAM, Web3/blockchain security, and security operations. Certified Oracle Cloud Infrastructure Architect Associate & Foundations Associate building enterprise defensive security tools.",
     location: "Bengaluru, Karnataka, India (IST / UTC+5:30)",
     email: "noobmaster8985@gmail.com",
     github: "https://github.com/noobkushal",
     linkedin: "https://www.linkedin.com/in/kushallllll/",
     credly: "https://www.credly.com/users/kushal-j.e51ce5e1/badges/credly",
     courseraVerification: "https://coursera.org/share/fdeecd27dec1125c29c35f8fd50f4ac8",
-    oracleVerification: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=5A159B1502A7EC992AE1EEF7551B8FEF312DA4F7A1129A2A6D76E5F594C4F68B",
+    oracleVerification: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=E20246731733E3E2D4A4A4DF44CF4BACA9821DBFDD72BB13E4B03B83CD9CF51B",
     availability: "Available for Internships & Entry-Level Cybersecurity / Cloud Security Roles"
   },
 
@@ -113,6 +113,25 @@ export const PORTFOLIO_DATA = {
 
   projects: [
     {
+      id: "netwatch-soc",
+      title: "NetWatch SOC — Real-Time Network Traffic & C2 Detection Lab",
+      tagline: "Real-Time Physical NIC Packet Sniffer, Zeek Log Ingestion, & Behavioral C2 Detection Platform",
+      description: "Full-stack open-source Security Operations Center (SOC) platform for real-time physical network card (Wi-Fi/Ethernet) packet sniffing, Zeek log ingestion (conn, dns, http, ssl), and behavioral C2 beaconing & DNS anomaly detection. Features an in-browser binary PCAP parser, 11-page Streamlit SOC cockpit, SQLite database, salted SHA-256 RBAC authentication, and Admin Consent permission governance.",
+      category: "CLOUD_SECURITY",
+      techStack: ["Python 3.11", "Scapy", "Streamlit", "SQLite", "Zeek LTS", "JavaScript (Binary PCAP Parser)", "ATT&CK (T1071)", "Npcap", "pytest"],
+      githubUrl: "https://github.com/noobkushal/C2.git",
+      demoUrl: "https://noobkushal.github.io/C2/",
+      highlights: [
+        "Real-world live physical network interface packet sniffer (Wi-Fi, Ethernet) using Scapy with Layer 3 fallback",
+        "In-browser binary PCAP parser decoding Ethernet, IPv4, TCP/UDP headers, protocol layer trees, and hex dumps",
+        "Grouped statistical C2 beaconing detector using Coefficient of Variation (CV <= 0.15) for regular callback isolation",
+        "DNS Anomaly Engine detecting DGA long domains (>50 chars), subdomain exfiltration tunneling, and rare destinations",
+        "Multi-detector risk scoring engine delivering 0–100 risk ratings, severity bands (LOW to CRITICAL), and ATT&CK mapping",
+        "Salted SHA-256 password security, RBAC session tracking (ADMIN vs ANALYST), and Admin Consent governance"
+      ],
+      featured: true
+    },
+    {
       id: "cloud-iam-lab",
       title: "Cloud IAM Security Lab",
       tagline: "Educational IAM Auditing, Permission Simulation & Security Engine Platform",
@@ -165,12 +184,14 @@ export const PORTFOLIO_DATA = {
       category: "Cybersecurity & SecOps",
       icon: "ShieldAlert",
       skills: [
+        { name: "Network Packet Sniffing & PCAP Analysis", isCore: true },
+        { name: "Scapy & Zeek Telemetry Ingestion", isCore: true },
         { name: "Vulnerability Assessment", isCore: true },
         { name: "Threat Modeling", isCore: true },
         { name: "Network Security Fundamentals", isCore: true },
         { name: "Threat Detection & Incident Response", isCore: true },
         { name: "Microsoft Sentinel (SIEM)", isCore: true },
-        { name: "Microsoft Defender Fundamentals", isCore: true }
+        { name: "MITRE ATT&CK Framework Mapping", isCore: true }
       ]
     },
     {
@@ -232,7 +253,7 @@ export const PORTFOLIO_DATA = {
       description: "Specializing in Computer Science, Cloud Security, Cybersecurity Operations, and Software Engineering.",
       bulletPoints: [
         "Focused coursework in Computer Networks, Operating Systems, Database Management Systems, and Information Security",
-        "Built practical hands-on security labs including Cloud IAM Security Lab, Decrypto Web3 Smart Contracts, and vulnerability tools",
+        "Built practical hands-on security labs including NetWatch SOC Engine, Cloud IAM Security Lab, Decrypto Web3 Smart Contracts, and vulnerability tools",
         "Active member of student technical groups and cybersecurity study circles"
       ]
     }
