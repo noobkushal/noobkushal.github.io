@@ -14,7 +14,7 @@ export const HeroTerminal: React.FC = () => {
         <div className="lg:col-span-7 space-y-6">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-mono font-semibold">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-            <span>Available for Cybersecurity & Cloud Security Roles</span>
+            <span>Available for Cybersecurity &amp; Cloud Security Roles</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-100 tracking-tight leading-tight">
@@ -32,7 +32,7 @@ export const HeroTerminal: React.FC = () => {
           {/* Key Quick Badges */}
           <div className="flex flex-wrap gap-2 pt-2">
             <span className="px-3 py-1 bg-[#151D2E] border border-cyan-500/30 rounded-lg text-xs font-mono text-cyan-300 flex items-center gap-1.5">
-              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" /> Oracle OCI Foundations Certified
+              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" /> Oracle OCI Architect &amp; Foundations Certified
             </span>
             <span className="px-3 py-1 bg-[#151D2E] border border-emerald-500/30 rounded-lg text-xs font-mono text-emerald-300 flex items-center gap-1.5">
               <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" /> Google Cybersecurity Professional
@@ -48,7 +48,7 @@ export const HeroTerminal: React.FC = () => {
               href="#projects"
               className="px-6 py-3 bg-gradient-to-r from-cyan-500 to-emerald-500 hover:from-cyan-400 hover:to-emerald-400 text-black font-bold rounded-xl text-xs font-mono shadow-xl shadow-cyan-500/20 flex items-center gap-2 transition-all hover:scale-[1.02]"
             >
-              <span>Explore Cloud IAM Lab</span>
+              <span>Explore Projects</span>
               <ArrowRight className="w-4 h-4" />
             </a>
             <a
@@ -83,7 +83,7 @@ export const HeroTerminal: React.FC = () => {
                 <span className="text-emerald-400">kushal@sec-ops</span>:<span className="text-cyan-400">~</span>$ <span className="text-slate-100">whoami</span>
               </div>
               <div className="text-cyan-300 pl-4 border-l-2 border-cyan-500/50">
-                &gt; Kushal J — Cybersecurity & Cloud Security Enthusiast
+                &gt; Kushal J — Cybersecurity &amp; Cloud Security Engineer
               </div>
 
               <div>
@@ -98,7 +98,7 @@ export const HeroTerminal: React.FC = () => {
                 <span className="text-emerald-400">kushal@sec-ops</span>:<span className="text-cyan-400">~</span>$ <span className="text-slate-100">cat current_focus.json</span>
               </div>
               <div className="text-amber-300 pl-4 border-l-2 border-amber-500/50">
-                &gt; ["Cloud IAM", "OCI Security", "Microsoft Sentinel", "Microsoft Defender", "Least Privilege"]
+                &gt; ["NetWatch SOC Platform", "Cloud IAM Security", "OCI Architect", "Microsoft Sentinel", "C2 Detection"]
               </div>
 
               <div className="pt-2 flex items-center gap-2 text-slate-400">
