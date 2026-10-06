@@ -86,6 +86,8 @@ export const PORTFOLIO_DATA = {
       issuer: "Microsoft",
       issuerBrand: "MICROSOFT",
       status: "COMPLETED",
+      verificationUrl: "https://learn.microsoft.com/en-in/users/kushalj-3681/credentials/3b0eeddadf41f490?ref=https%3A%2F%2Fwww.linkedin.com%2F",
+      date: "Verified Credential",
       description: "Verified Microsoft certification demonstrating core principles of Microsoft Entra ID IAM, Microsoft Defender threat protection, Microsoft Sentinel SIEM, and Zero Trust security architecture models.",
       skills: ["Microsoft Entra ID", "Microsoft Defender", "Microsoft Sentinel", "Zero Trust"]
     },
@@ -118,7 +120,7 @@ export const PORTFOLIO_DATA = {
       tagline: "Enterprise-Grade Real-Time SOC Incident Investigation Platform with Dynamic Sigma Detection & Grounded AI Copilot",
       description: "Full-stack Security Operations Center (SOC) platform designed for SIEM telemetry ingestion (Windows Event IDs 4624/4625/4720/4688, Linux auth.log, Apache/Nginx web logs), dynamic Sigma rule evaluation, multi-stage attack correlation into unified incident timelines, transparent 0–100 risk scoring, evidence-grounded AI copilot investigation, live log streaming, and automated containment response simulation.",
       category: "CLOUD_SECURITY",
-      techStack: ["Python 3.11", "FastAPI", "React 18", "TypeScript", "Tailwind CSS", "SQLAlchemy / SQLite", "Sigma Rules", "MITRE ATT&CK", "OpenAI / AI Engine", "pytest"],
+      techStack: ["Python (Security Automation & API)", "FastAPI", "React", "TypeScript", "SIEM Log Analysis", "Sigma Rules", "MITRE ATT&CK Framework Mapping", "Threat Detection & Incident Response", "Microsoft Sentinel (SIEM)", "SQL (Data & Log Analysis)"],
       githubUrl: "https://github.com/noobkushal/AI-SOC-Investigation-Assistant",
       highlights: [
         "Real-world SIEM telemetry ingestion & normalization supporting Windows Events, Linux auth.log, and HTTP access logs",
@@ -136,7 +138,7 @@ export const PORTFOLIO_DATA = {
       tagline: "Real-Time Physical NIC Packet Sniffer, Zeek Log Ingestion, & Behavioral C2 Detection Platform",
       description: "Full-stack open-source Security Operations Center (SOC) platform for real-time physical network card (Wi-Fi/Ethernet) packet sniffing, Zeek log ingestion (conn, dns, http, ssl), and behavioral C2 beaconing & DNS anomaly detection. Features an in-browser binary PCAP parser, 11-page Streamlit SOC cockpit, SQLite database, salted SHA-256 RBAC authentication, and Admin Consent permission governance.",
       category: "CLOUD_SECURITY",
-      techStack: ["Python 3.11", "Scapy", "Streamlit", "SQLite", "Zeek LTS", "JavaScript (Binary PCAP Parser)", "ATT&CK (T1071)", "Npcap", "pytest"],
+      techStack: ["Python (Security Automation & API)", "Network Packet Sniffing & PCAP Analysis", "Scapy & Zeek Telemetry Ingestion", "Streamlit", "SQLite", "Threat Detection & Incident Response", "MITRE ATT&CK Framework Mapping", "Role-Based Access Control (RBAC)"],
       githubUrl: "https://github.com/noobkushal/C2",
       demoUrl: "https://noobkushal.github.io/C2/",
       highlights: [
@@ -155,7 +157,7 @@ export const PORTFOLIO_DATA = {
       tagline: "Educational IAM Auditing, Permission Simulation & Security Engine Platform",
       description: "Full-stack educational platform built with Python FastAPI, SQLite, and React TypeScript. Simulates cloud IAM environments with automated Security Analysis Engine detecting wildcard permissions (*:*), excessive developer deletion rights, and least privilege violations.",
       category: "CLOUD_SECURITY",
-      techStack: ["Python", "FastAPI", "SQLite", "React", "TypeScript", "Tailwind CSS", "RBAC", "Least Privilege", "pytest"],
+      techStack: ["Oracle Cloud Infrastructure (OCI)", "IAM Security Governance", "Role-Based Access Control (RBAC)", "Principle of Least Privilege (PoLP)", "Cloud Security Auditing", "Python (Security Automation & API)", "FastAPI", "React", "TypeScript"],
       githubUrl: "https://github.com/noobkushal/cloud-iam-security-lab",
       highlights: [
         "Automated Security Engine inspecting IAM policies for wildcard administrator anti-patterns (*:*)",
@@ -172,7 +174,7 @@ export const PORTFOLIO_DATA = {
       tagline: "Industrial-Grade No-Code Web3 Token Forge & Linear Vesting Schedule Deployment Portal",
       description: "Industrial-grade Web3 platform for deploying audited ERC-20 tokens and linear vesting schedules in one click. Features a premium React dashboard, Etherscan verification, unified token claim portal, Web3 wallet integration, and security-first smart contract tokenomics.",
       category: "WEB3_BLOCKCHAIN",
-      techStack: ["Solidity", "Ethereum / EVM", "ERC-20 Standard", "Smart Contracts", "React", "Web3.js / Ethers.js", "Vesting Schedules", "Blockchain Security"],
+      techStack: ["Solidity Smart Contracts", "ERC-20 Token Standards", "EVM & Web3 Integration", "Smart Contract Vulnerability Auditing", "React", "Web3.js / Ethers.js"],
       githubUrl: "https://github.com/noobkushal/Decrypto_ERC20",
       highlights: [
         "Implemented standardized ERC-20 interface (totalSupply, balanceOf, transfer, approve, transferFrom)",
@@ -188,7 +190,7 @@ export const PORTFOLIO_DATA = {
       tagline: "High-Fidelity Telemetry Console & Predictive Clinical Deterioration Surveillance System",
       description: "Real-time ICU telemetry dashboard and clinical deterioration predictive surveillance system. Features a high-fidelity React/TypeScript console with live simulated ECG streams, machine-learning-driven NEWS2 scoring, smart de-duplicated alert hub, and FastAPI/SQLite backend.",
       category: "SYSTEMS_TELEMETRY",
-      techStack: ["Python", "FastAPI", "SQLite", "React", "TypeScript", "Tailwind CSS", "NEWS2 ML Scoring", "ECG Streamer"],
+      techStack: ["Python (Security Automation & API)", "FastAPI", "SQLite (Data Analysis)", "React", "TypeScript", "Predictive ML Scoring", "Telemetry Surveillance"],
       githubUrl: "https://github.com/noobkushal/Pulseguard",
       highlights: [
         "High-fidelity real-time telemetry console displaying live simulated multi-parameter ECG streams",
@@ -204,7 +206,7 @@ export const PORTFOLIO_DATA = {
       tagline: "B2B Circular Economy Marketplace & Real-Time ESG Carbon Footprint Telemetry Platform",
       description: "B2B smart marketplace and real-time ESG telemetry dashboard designed to foster industrial circularity by enabling businesses to trade raw waste materials, discover regional suppliers via interactive maps, and track carbon footprint savings.",
       category: "SYSTEMS_TELEMETRY",
-      techStack: ["JavaScript", "React", "Leaflet Maps", "ESG Telemetry", "Tailwind CSS", "Vite"],
+      techStack: ["JavaScript", "React", "ESG Telemetry", "Interactive Leaflet Maps", "Vite"],
       githubUrl: "https://github.com/noobkushal/Reloop",
       demoUrl: "https://noobkushal.github.io/Reloop/",
       highlights: [
