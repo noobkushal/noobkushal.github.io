@@ -16,7 +16,7 @@ export interface Project {
   title: string;
   tagline: string;
   description: string;
-  category: 'CLOUD_SECURITY' | 'WEB3_BLOCKCHAIN';
+  category: 'CLOUD_SECURITY' | 'WEB3_BLOCKCHAIN' | 'SYSTEMS_TELEMETRY';
   techStack: string[];
   githubUrl: string;
   demoUrl?: string;
@@ -46,7 +46,7 @@ export const PORTFOLIO_DATA = {
     name: "Kushal J",
     title: "Cybersecurity & Cloud Security Engineer",
     tagline: "Building Practical Cloud IAM, Threat Detection, Network Security & Web3 Security Solutions",
-    bio: "Computer Science Engineering student focused on cybersecurity, cloud security, network traffic analysis, threat detection, IAM, Web3/blockchain security, and security operations. Certified Oracle Cloud Infrastructure Architect Associate & Foundations Associate building enterprise defensive security tools.",
+    bio: "Computer Science Engineering student focused on cybersecurity, cloud security, SIEM log analysis, network traffic sniffer engines, cloud IAM auditing, Web3 security, and security operations. Certified Oracle Cloud Infrastructure Architect & Foundations Associate, and Microsoft SC-900 certified, building enterprise defensive security platforms.",
     location: "Bengaluru, Karnataka, India (IST / UTC+5:30)",
     email: "noobmaster8985@gmail.com",
     github: "https://github.com/noobkushal",
@@ -81,6 +81,15 @@ export const PORTFOLIO_DATA = {
       skills: ["Oracle Cloud Infrastructure (OCI)", "Cloud Security", "IAM", "Cloud Governance"]
     },
     {
+      id: "cert-ms900",
+      title: "Microsoft SC-900: Security, Compliance, & Identity Fundamentals",
+      issuer: "Microsoft",
+      issuerBrand: "MICROSOFT",
+      status: "COMPLETED",
+      description: "Verified Microsoft certification demonstrating core principles of Microsoft Entra ID IAM, Microsoft Defender threat protection, Microsoft Sentinel SIEM, and Zero Trust security architecture models.",
+      skills: ["Microsoft Entra ID", "Microsoft Defender", "Microsoft Sentinel", "Zero Trust"]
+    },
+    {
       id: "cert-google",
       title: "Google Cybersecurity Professional Certificate",
       issuer: "Google / Coursera",
@@ -99,19 +108,28 @@ export const PORTFOLIO_DATA = {
       verificationUrl: "https://www.credly.com/users/kushal-j.e51ce5e1/badges/credly",
       description: "Verified badges for networking security, cybersecurity principles, enterprise threat fundamentals, and defensive security.",
       skills: ["Network Security", "Threat Modeling", "Vulnerability Assessment", "Cisco Security"]
-    },
-    {
-      id: "cert-ms900",
-      title: "Microsoft SC-900: Security, Compliance, & Identity Fundamentals",
-      issuer: "Microsoft",
-      issuerBrand: "MICROSOFT",
-      status: "IN_PROGRESS",
-      description: "Currently preparing for Microsoft certification focusing on Entra ID IAM, Microsoft Defender, Microsoft Sentinel, and Compliance frameworks.",
-      skills: ["Microsoft Entra ID", "Microsoft Defender", "Microsoft Sentinel", "Zero Trust"]
     }
   ] as Certification[],
 
   projects: [
+    {
+      id: "ai-soc-investigator",
+      title: "AI SOC Investigation Assistant (Obsidian Sentinel)",
+      tagline: "Enterprise-Grade Real-Time SOC Incident Investigation Platform with Dynamic Sigma Detection & Grounded AI Copilot",
+      description: "Full-stack Security Operations Center (SOC) platform designed for SIEM telemetry ingestion (Windows Event IDs 4624/4625/4720/4688, Linux auth.log, Apache/Nginx web logs), dynamic Sigma rule evaluation, multi-stage attack correlation into unified incident timelines, transparent 0–100 risk scoring, evidence-grounded AI copilot investigation, live log streaming, and automated containment response simulation.",
+      category: "CLOUD_SECURITY",
+      techStack: ["Python 3.11", "FastAPI", "React 18", "TypeScript", "Tailwind CSS", "SQLAlchemy / SQLite", "Sigma Rules", "MITRE ATT&CK", "OpenAI / AI Engine", "pytest"],
+      githubUrl: "https://github.com/noobkushal/AI-SOC-Investigation-Assistant",
+      highlights: [
+        "Real-world SIEM telemetry ingestion & normalization supporting Windows Events, Linux auth.log, and HTTP access logs",
+        "Dynamic Sigma rule detection engine evaluating attack behaviors like brute force, PowerShell execution, and account creation",
+        "Multi-stage alert correlation engine grouping related host/user/IP telemetry into unified incident timelines",
+        "Deterministic 0–100 risk scoring algorithm with transparent factor breakdown and MITRE ATT&CK technique mapping",
+        "Evidence-grounded AI Copilot offering automated root-cause analysis, hypothesis generation, and containment steps",
+        "Full-stack interactive SOC HUD console featuring live telemetry simulation and executable containment responses"
+      ],
+      featured: true
+    },
     {
       id: "netwatch-soc",
       title: "NetWatch SOC — Real-Time Network Traffic & C2 Detection Lab",
@@ -119,7 +137,7 @@ export const PORTFOLIO_DATA = {
       description: "Full-stack open-source Security Operations Center (SOC) platform for real-time physical network card (Wi-Fi/Ethernet) packet sniffing, Zeek log ingestion (conn, dns, http, ssl), and behavioral C2 beaconing & DNS anomaly detection. Features an in-browser binary PCAP parser, 11-page Streamlit SOC cockpit, SQLite database, salted SHA-256 RBAC authentication, and Admin Consent permission governance.",
       category: "CLOUD_SECURITY",
       techStack: ["Python 3.11", "Scapy", "Streamlit", "SQLite", "Zeek LTS", "JavaScript (Binary PCAP Parser)", "ATT&CK (T1071)", "Npcap", "pytest"],
-      githubUrl: "https://github.com/noobkushal/C2.git",
+      githubUrl: "https://github.com/noobkushal/C2",
       demoUrl: "https://noobkushal.github.io/C2/",
       highlights: [
         "Real-world live physical network interface packet sniffer (Wi-Fi, Ethernet) using Scapy with Layer 3 fallback",
@@ -139,7 +157,6 @@ export const PORTFOLIO_DATA = {
       category: "CLOUD_SECURITY",
       techStack: ["Python", "FastAPI", "SQLite", "React", "TypeScript", "Tailwind CSS", "RBAC", "Least Privilege", "pytest"],
       githubUrl: "https://github.com/noobkushal/cloud-iam-security-lab",
-      demoUrl: "http://localhost:5173",
       highlights: [
         "Automated Security Engine inspecting IAM policies for wildcard administrator anti-patterns (*:*)",
         "Permission Evaluation Simulator calculating ALLOWED/DENIED access with policy trace",
@@ -151,17 +168,50 @@ export const PORTFOLIO_DATA = {
     },
     {
       id: "decrypto-erc20",
-      title: "Decrypto — ERC20 Token & Web3 Platform",
-      tagline: "Decentralized Blockchain Asset Standard & Smart Contract Implementation",
-      description: "Blockchain & Web3 project implementing the ERC-20 token standard on Ethereum/EVM. Features smart contract logic, secure token transfers, mint/burn mechanisms, approval workflows, and Web3 integration.",
+      title: "Decrypto — Web3 Token & Vesting Deployment Wizard",
+      tagline: "Industrial-Grade No-Code Web3 Token Forge & Linear Vesting Schedule Deployment Portal",
+      description: "Industrial-grade Web3 platform for deploying audited ERC-20 tokens and linear vesting schedules in one click. Features a premium React dashboard, Etherscan verification, unified token claim portal, Web3 wallet integration, and security-first smart contract tokenomics.",
       category: "WEB3_BLOCKCHAIN",
-      techStack: ["Solidity", "Ethereum", "ERC-20", "Smart Contracts", "Web3.js", "Ethers.js", "Blockchain Security"],
+      techStack: ["Solidity", "Ethereum / EVM", "ERC-20 Standard", "Smart Contracts", "React", "Web3.js / Ethers.js", "Vesting Schedules", "Blockchain Security"],
       githubUrl: "https://github.com/noobkushal/Decrypto_ERC20",
       highlights: [
         "Implemented standardized ERC-20 interface (totalSupply, balanceOf, transfer, approve, transferFrom)",
         "Designed smart contract logic preventing reentrancy vulnerabilities and integer overflows",
-        "Integrated Web3 wallet interaction and decentralized asset management principles",
-        "Security-first smart contract design with access control mechanisms"
+        "Integrated linear vesting schedule smart contracts and claim portal for transparent tokenomics",
+        "Built no-code web3 token deployment wizard with Etherscan verification workflow"
+      ],
+      featured: true
+    },
+    {
+      id: "pulseguard",
+      title: "PulseGuard — Real-Time ICU Telemetry & Predictive Clinical Surveillance",
+      tagline: "High-Fidelity Telemetry Console & Predictive Clinical Deterioration Surveillance System",
+      description: "Real-time ICU telemetry dashboard and clinical deterioration predictive surveillance system. Features a high-fidelity React/TypeScript console with live simulated ECG streams, machine-learning-driven NEWS2 scoring, smart de-duplicated alert hub, and FastAPI/SQLite backend.",
+      category: "SYSTEMS_TELEMETRY",
+      techStack: ["Python", "FastAPI", "SQLite", "React", "TypeScript", "Tailwind CSS", "NEWS2 ML Scoring", "ECG Streamer"],
+      githubUrl: "https://github.com/noobkushal/Pulseguard",
+      highlights: [
+        "High-fidelity real-time telemetry console displaying live simulated multi-parameter ECG streams",
+        "Machine-learning-driven NEWS2 clinical deterioration predictive risk scoring engine",
+        "Smart de-duplicated alarm hub filtering telemetry noise and prioritizing critical alerts",
+        "Full-stack architecture powered by FastAPI backend, SQLite database, and responsive React frontend"
+      ],
+      featured: true
+    },
+    {
+      id: "reloop",
+      title: "ReLoop — B2B Smart Marketplace & ESG Telemetry Dashboard",
+      tagline: "B2B Circular Economy Marketplace & Real-Time ESG Carbon Footprint Telemetry Platform",
+      description: "B2B smart marketplace and real-time ESG telemetry dashboard designed to foster industrial circularity by enabling businesses to trade raw waste materials, discover regional suppliers via interactive maps, and track carbon footprint savings.",
+      category: "SYSTEMS_TELEMETRY",
+      techStack: ["JavaScript", "React", "Leaflet Maps", "ESG Telemetry", "Tailwind CSS", "Vite"],
+      githubUrl: "https://github.com/noobkushal/Reloop",
+      demoUrl: "https://noobkushal.github.io/Reloop/",
+      highlights: [
+        "B2B marketplace platform for industrial waste material trading and resource recycling",
+        "Interactive geographical map integration for regional supplier and recycler discovery",
+        "Real-time ESG telemetry dashboard calculating carbon footprint reduction and material savings",
+        "Deployed live web application built with React, Vite, and interactive Leaflet map components"
       ],
       featured: true
     }

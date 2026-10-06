@@ -38,7 +38,7 @@ export const HeroTerminal: React.FC = () => {
               <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" /> Google Cybersecurity Professional
             </span>
             <span className="px-3 py-1 bg-[#151D2E] border border-amber-500/30 rounded-lg text-xs font-mono text-amber-300 flex items-center gap-1.5">
-              ⏳ Preparing Microsoft SC-900
+              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" /> Microsoft SC-900 Certified
             </span>
           </div>
 
